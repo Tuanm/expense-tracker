@@ -1,7 +1,0 @@
-{
-    "fmt": {
-        "include": ["src"],
-        "indentWidth": 4,
-        "singleQuote": true
-    }
-}

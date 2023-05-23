@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-deno check src/deps.ts
+deno check $@ src/deps.ts

@@ -1,5 +1,5 @@
-import error from './error.middleware.ts';
-import staticc from './static.middleware.ts';
+import error from './error.ts';
+import staticc from './static.ts';
 
 export default {
     /**

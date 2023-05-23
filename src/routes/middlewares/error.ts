@@ -1,4 +1,4 @@
-import { oak } from './deps.ts';
+import { oak } from '@deps';
 
 export default async (context: oak.Context, next: oak.Next) => {
     try {

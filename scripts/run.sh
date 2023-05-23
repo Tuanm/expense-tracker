@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-deno run -A src/main.ts
+deno run --unstable -A $@ src/main.ts

@@ -1,4 +1,4 @@
-import { Logger } from './deps.ts';
+import { Logger } from '@deps';
 
 const logger = new Logger();
 

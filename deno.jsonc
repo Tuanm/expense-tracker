@@ -1,0 +1,17 @@
+{
+    "imports": {
+        "@controllers": "./src/routes/controllers/index.ts",
+        "@deps": "./src/deps.ts",
+        "@env": "./src/env.ts",
+        "@log": "./src/logger.ts",
+        "@middlewares": "./src/routes/middlewares/index.ts",
+        "@models": "./src/models/index.ts",
+        "@services": "./src/services/index.ts",
+        "@utils": "./src/utils.ts"
+    },
+    "fmt": {
+        "include": ["src"],
+        "indentWidth": 4,
+        "singleQuote": true
+    }
+}

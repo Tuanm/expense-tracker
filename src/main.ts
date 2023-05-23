@@ -1,14 +1,15 @@
-import { oak } from './deps.ts';
-import { port } from './env.ts';
-import controllers from './controllers.ts';
-import log from './logger.ts';
-import middlewares from './middlewares.ts';
+import { oak } from '@deps';
+import { port } from '@env';
+import controllers from '@controllers';
+import log from '@log';
+import middlewares from '@middlewares';
+import { prepareTables } from '@models';
 
 const app = new oak.Application();
 
 app.use(middlewares.error);
-app.use(controllers.home.routes());
-app.use(controllers.home.allowedMethods());
+app.use(controllers.item.routes());
+app.use(controllers.item.allowedMethods());
 app.use(middlewares.static);
 
 app.addEventListener('listen', (event) => {
@@ -16,4 +17,5 @@ app.addEventListener('listen', (event) => {
     log.info(`Listening on ${protocol}://${event.hostname}:${event.port}`);
 });
 
+await prepareTables();
 await app.listen({ port });

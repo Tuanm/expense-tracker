@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-deno fmt --config .deno.jsonc
+deno fmt --unstable $@
